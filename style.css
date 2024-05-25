@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(image/image\ 15.jpeg);
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+  }
+  .img {
+    width: 60px;
+    height: 60px;
+    padding-left: 7px;
+    border-radius: 60%;
+    position: relative;
+  }
+  nav {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #079713;
+    
+  }
+  nav img {
+    width: 150px;
+  }
+  .nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #36f43f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-box h1 {
+    font-size: 62px;
+  }
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+  }
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .hero-btn:hover {
+    border: 1px solid #079713;
+    background: #36f43f;
+    transition: 1s;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 700px) {
+    .text-box h1 {
+      font-size: 20px;
+      
+    }
+    .nav-links ul li {
+      display: block;
+      
+    }
+    .nav-links { 
+      position: absolute;
+      background: #0647a852;
+  
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+      
+    }
+  }
+  
+  #services {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .service-card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+  
+  .service-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  button{
+    background-color: green;
+    padding: 11px 40px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    border: none;
+    
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-weight: bold;
+  }
+
+  #Gallery {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .Gallery-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .Gallery-card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .Gallery-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Gallery-card img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
+  
+  .Gallery-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .Gallery-card p {
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+  button{
+    background-color: green;
+    padding: 11px 40px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    border: none;
+    
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    font-weight: bold;
+  }
+  
+  #about {
+    padding: 50px 0;
+    margin: 5px 15px;
+  }
+  
+  .member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .member-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .member-card:hover {
+    background-color: #e8e8e8;
+    cursor: pointer;
+  }
+  .member-description {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .member-info {
+    margin-top: 20px;
+  }
+  .member-info h3 {
+    margin: 10px 0;
+  }
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  #contact {
+    padding: 50px 0;
+  }
+  
+  .query-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-btn {
+    background-color: #079713;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #086710;
+  }
+  
+  @media (max-width: 768px) {
+    .service-cards {
+      grid-template-columns: 1fr;
+      
+    }
+    .member-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .query-form {
+      padding: 0 20px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      font-size: 16px;
+      
+    }
+  
+    .submit-btn {
+      width: 100%;
+
+    }
+    iframe{
+      width: 100%;
+    }
+    .Gallery-cards{
+      grid-template-columns: 1fr;
+    }
+  }
+  .booking-btn {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  #booking-form{
+    margin-left: 50px;
+    
+  }
+  
+  /* .hidden {
+    display: none;
+  } */
+
+
+
+
+
+
+
+
+
+

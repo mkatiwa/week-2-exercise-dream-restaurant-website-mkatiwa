@@ -1,11 +1,349 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Kazuri</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kazuri Cafe</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="image/image 13.jpeg" alt="logo" class="img"
+        /></a>
+        <div class="nav-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+            </ul>
+        </div>
+      </nav>
+
+      <div class="text-box">
+        <h1>Have a Tasty and Quality Food Item</h1>
+        <p>
+          Our delicious food is waiting for you <b>Order anytime we serve</b>
+        </p>
+
+        <button class="hero-btn">Visit Us To Know more</button>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section id="services">
+      <h2><Menu>Menu</Menu></h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="image/image 1.jpeg" alt="" />
+
+          <h4>Ugali beef & greens</h4>
+          <p><span class="subtitle">Pricing</span> kes850</p>
+          <p><span class="subtitle">Availability</span>: Available</p>
+          <a href="#booking-form-submit"><button id="book-mountain-trek56" class="booking-btn" onclick="BookHere()">order</button></a>
+        </div>
+        <div class="service-card">
+          <img src="image/image 2.jpeg" alt="" />
+
+          <h4>Cake Dessert</h4>
+         
+          <p><span class="subtitle">Pricing</span>: kes1000</p>
+          <p><span class="subtitle">Availability</span>: Available</p>
+          <a href="#booking-form-submit"><button id="book-mountain-trek56" class="booking-btn" onclick="BookHere()">Order</button></a>
+        </div>
+        <div class="service-card">
+          <img src="image/image 3.jpeg" alt="" />
+
+          <h4>Fish</h4>
+         
+          <p><span class="subtitle">Pricing</span>: kes700</p>
+          <p><span class="subtitle">Availability</span>: Available</p>
+          <a href="#booking-form-submit"><button id="book-mountain-trek56" class="booking-btn" onclick="BookHere()">Order</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      
+      <div class="service-cards">
+        <div class="service-card">
+          <img src="image/image 4.jpeg" alt="" />
+          <h4>Ugali Kuku & greens</h4>
+         
+          <p><span class="subtitle">Pricing</span>:kes 1200</p>
+          <p><span class="subtitle">Availability</span>: Available</p>
+          <a href="#booking-form-submit"><button id="book-mountain-trek56" class="booking-btn" onclick="BookHere()">    Order</button></a>
+        </div>
+        <div class="service-card">
+          <img src="image/image 5.jpeg" alt="" />
+          <h4>Pasta with sausage</h4>
+         
+          <p><span class="subtitle">Pricing</span>: kes400</p>
+          <p><span class="subtitle">Availability</span>: Available</p>
+          <a href="#booking-form-submit"><button id="book-mountain-trek56" class="booking-btn" onclick="BookHere()">Order</button></a>
+        </div>
+        <div class="service-card">
+          <img src="image/image 6.jpeg" alt="" />
+          <h4>Egg salad</h4>
+        
+          <p><span class="subtitle">Pricing</span>:kes 100</p>
+          <p><span class="subtitle">Availability</span>: Available</p>
+          <a href="#booking-form-submit"><button id="book-mountain-trek56" class="booking-btn" onclick="BookHere()">Order</button></a>
+        </div>
+      </div>
+    </section>
+    <div id="booking-form" class="hidden">
+      <h3>Ordering Form</h3>
+      <form id="booking-form-submit" name="submit-to-google-sheet">
+        <label for="services" name="services" required>Select Food:</label>
+        <select id="services" name="services" required>
+          <option value="Ugali beef & greens - kes850">Ugali beef & greens - kes850</option>
+          <option value="Cake Dessert - kes1000" >Cake Dessert - kes1000</option>
+          <option value="Fish - kes 700">Fish - kes700</option>
+          <option value="Ugali Kuku & greens - kes1200">Ugali Kuku & greens - kes1200</option>
+          <option value="Pasta with sausage - kes400">pasta with sausage - kes400</option>
+          <option value="Egg salad - kes">Egg salad - kes100</option>
+        </select>
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="Email" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="Date" required>
+        <button type="submit" onclick="resetForm()">Submit Order</button>
+      </form>
+    </div>
+
+
+    <!--Gallery section-->
+    <section id="Gallery">
+      <h2>Images</h2>
+      <div class="Gallery-cards">
+        <div class="Gallery-card">
+          <img src="image/image 7.jpeg" alt="" />
+          <h4>Nyama choma</h4>
+        </div>
+
+        <div class="Gallery-card">
+          <img src="image/image 8.jpeg" alt="" />
+          <h4>Fried Kuku with chips</h4>
+        </div>
+
+        <div class="Gallery-card">
+          <img src="image/image 9.jpeg" alt="" />
+          <h4>Bread sandwich(Breakfast)</h4>
+        </div>
+
+        <div class="Gallery-card">
+          <img src="image/image 10.jpeg" alt="" />
+          <h4>Chapati beef</h4>
+        </div>
+
+        <div class="Gallery-card">
+          <img src="image/image 11.jpeg" alt="" />
+          <h4>Fruits salad</h4>
+        </div>
+
+        <div class="Gallery-card">
+          <img src="image/image 12.jpeg" alt="" />
+          <h4>fried chicken</h4>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- about section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="member-grid">
+        <div class="member-card">
+          <div class="member-info">
+            <img
+              src="image/Chef 1.jpeg"
+              alt="profile-picture"
+              class="profile-picture"
+            />
+            <h3>Maria Katiwa</h3>
+            <p class="expertise">
+              <span class="subtitle">Chef</span>
+            </p>
+            <p class="member-description">
+              Talented and passionate chef for night shift
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-info">
+            <img
+              src="image/chef 2.jpeg"
+              alt="profile-picture"
+              class="profile-picture"
+            />
+            <h3>Taira ken</h3>
+            <p class="expertise">
+              <span class="subtitle">Head of kitchen depertment</span>
+            </p>
+            <p class="member-description">
+              Skilled chef and a cheerful leader
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-info">
+            <img
+              src="image/chef 3.jpeg"
+              alt="profile-picture"
+              class="profile-picture"
+            />
+            <h3>Teles bera</h3>
+              <p class="expertise"></p>
+              <span class="subtitle">serves best breakfast</span>
+            </p>
+            <p class="member-description">
+              best at preparing and serving breakfast. Available during morning hours
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-info">
+            <img
+              src="image/chef 4.jpeg"
+              alt="profile-picture"
+              class="profile-picture"
+            />
+            <h3>Gulesho Warsalad</h3>
+            <p class="expertise">
+              <span class="subtitle">serves groups, serves tables the best</span>: Database Design
+            </p>
+            <p class="member-description">
+              A good trainer to new chefs or anyone who books cooking trainings
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-info">
+            <img
+              src="image/chef 6.jpeg"
+              alt="profile-picture"
+              class="profile-picture"
+            />
+            <h3>Roselo kingangi</h3>
+            <p class="expertise">
+              <span class="subtitle">Available during the day</span>
+            </p>
+            <p class="member-description">
+              Welcomes you with best desserts and salads
+            </p>
+          </div>
+        </div>
+        <div class="member-card">
+          <div class="member-info">
+            <img
+              src="image/chef 5.jpeg"
+              alt="profile-picture"
+              class="profile-picture"
+            />
+            <h3>Mak Ashaw</h3>
+            <p class="expertise">
+              <span class="subtitle">order from him</span>
+            </p>
+            <p class="member-description">
+              Works with orders department
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="query-form">
+        <form class="query-form" action="#" method="post" name="submit-to-google-sheets">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="query">Query</label>
+            <!-- <textarea id="query" name="Query" required></textarea> -->
+            <textarea id="query" name="Query" rows="1" style="height: 30px;" oninput="adjustTextAreaHeight()"></textarea>
+          </div>
+          <button type="submit" class="submit-btn" onclick="sendForm()">Submit</button>
+        </form>
+      </div>
+    </section>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwmRF2YG5V4i1DlXEYeNC80QLkXXG2jhazOU6zlRHzLCYv7Ad-1MfLNt_4AhKrc3zwG/exec'
+      const form = document.forms['submit-to-google-sheet']
     
-</body>
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <script>
+      const myscriptURL = 'https://script.google.com/macros/s/AKfycbzvqLn6z2Dgu8pBaYkTjafV2SdSA46hDxqvnIyNoTdV7uzcOXIDAIisa62-raML9Yq0bQ/exec'
+      const forms = document.forms['submit-to-google-sheets']
+    
+      forms.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(myscriptURL, { method: 'POST', body: new FormData(forms)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
+    <script>
+    function resetForm() {
+      alert('Thank for ordering, your choice is well received');
+      document.getElementById("booking-form-submit");
+     
+    }
+    </script>
+    <script>
+      function sendForm() {
+        document.getElementById("contact");
+        // Display the alert message
+        alert('Thank you for query, we will get back to you');
+    
+        // Reset the form
+        
+      }
+    </script>
+    <script>
+      function adjustTextAreaHeight() {
+        const textArea = document.getElementById('query');
+        
+        // Reset the textarea's height to the default before recalculating
+        textArea.style.height = 'auto';
+        
+        // Set the minimum height (adjust this value as needed)
+        const minHeight = 30;
+        
+        // Set the height of the textarea based on its scroll height or minimum height
+        textArea.style.height = Math.max(minHeight, textArea.scrollHeight) + 'px';
+      }
+      
+    </script>
+  </body>
 </html>
